@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        package senond;
+<br>
+import org.openqa.selenium.By;<br>
+import org.openqa.selenium.WebDriver;<br>
+import org.openqa.selenium.edge.EdgeDriver;<br>
+import io.github.bonigarcia.wdm.WebDriverManager;<br>
+
+public class sel {<br>
+
+	public static void main(String[] args) {<br>
+        <br>
+		WebDriverManager.edgedriver().setup();<br>
+		WebDriver driver = new EdgeDriver();<br>
+		driver.get("https://google.com/");<br>
+		driver.manage().window().maximize();<br>
+		driver.findElement(By.id("APjFqb")).sendKeys("rohit sharma");<br>
+		driver.findElement(By.className("gNO89b")).click();<br>
+		driver.close();<br>
+        <br>
+	}<br>
+
+}<br>
+<br>
+<br>
+<dependencies>
+selenium-4.20.0   <br>
+webdrivermanager-5.7.0
+    <br>
+<br>
+<br> xpath= //*[@id=" "]
+<br>
+
+
+<br>
+<br>
+
+</body>
+</html>
+
